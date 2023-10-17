@@ -22,6 +22,7 @@ int buffer(char c)
 {
 	static char buffering[1024];
 	static int i;
+
 		if (c == -1 || i == 1024)
 		{
 			write(1, buffering, i);
@@ -30,4 +31,16 @@ int buffer(char c)
 		if (c != -1)
 			buffering[i++] = c;
 		return (1);
+
+	if (c == -1 || i == 1024)
+	{
+		write(1, buffering, i);
+		i = 0;
+	}
+
+	if (c != -1)
+		buffering[i++] = c;
+
+	return (1);
 }
+
