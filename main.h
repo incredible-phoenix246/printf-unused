@@ -11,7 +11,7 @@ char *itoa(long int, int);
 
 
 int _printf(const char *, ...);
-
+int print_binary(va_list);
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 int printf_srev(va_list args);
@@ -25,7 +25,7 @@ int print_rot(va_list);
 int print_unsigned(va_list);
 int print_base8(va_list);
 int print_hexadecimal_low(va_list);
-int print_hexadecimal_up(va_list);
+int print_hexadecimal_upp(va_list);
 int print_pointer(va_list);
 int print_rev_string(va_list);
 
