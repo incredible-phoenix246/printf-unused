@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_string - Print string
+ * printf_string - Print string
  * @list: list.
  *
  * Return: String length.
  */
 
-int print_string(va_list list)
+int printf_string(va_list list)
 {
 	char *p;
 	int p_len;

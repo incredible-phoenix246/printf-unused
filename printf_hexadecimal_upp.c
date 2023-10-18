@@ -4,12 +4,12 @@ int is_lowercase(char);
 char *string_to_upper(char *);
 
 /**
- * print_hexadecimal_upp - Print a number in hexadecimal format
+ * printf_hexadecimal_upp - Print a number in hexadecimal format
  * @list: Number to print
  *
  * Return: Length of the number
  **/
-int print_hexadecimal_upp(va_list list)
+int printf_hexadecimal_upp(va_list list)
 {
 	char *p_buff;
 	int size;

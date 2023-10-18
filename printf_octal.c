@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_octal - Print a unsigned octal
+ * printf_octal - Print a unsigned octal
  * @list: Number to print
  *
  * Return: Length of the number
  **/
-int print_octal(va_list list)
+int printf_octal(va_list list)
 {
 	char *p_buff;
 	int size;
