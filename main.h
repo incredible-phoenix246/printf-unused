@@ -5,25 +5,26 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/* utils.c */
 int _strlen(const char *);
 int print(char *);
 char *itoa(long int, int);
 
-
+/* printf.c */
 int _printf(const char *, ...);
-int print_binary(va_list);
+
+/* handler.c */
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
-int printf_srev(va_list args);
-int putcar(char c);
-int *print(const char *format, ...);
+
+/* printers */
 int print_string(va_list);
 int print_char(va_list);
 int print_integer(va_list);
-int main(va_list);
+int print_binary(va_list);
 int print_rot(va_list);
 int print_unsigned(va_list);
-int print_base8(va_list);
+int print_octal(va_list);
 int print_hexadecimal_low(va_list);
 int print_hexadecimal_upp(va_list);
 int print_pointer(va_list);
@@ -47,3 +48,4 @@ typedef struct _format
 
 
 #endif /* MAIN_H */
+
