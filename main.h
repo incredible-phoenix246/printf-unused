@@ -14,8 +14,9 @@ int _printf(const char *, ...);
 
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
-
-
+int printf_srev(va_list args);
+int putcar(char c);
+int *print(const char *format, ...);
 int print_string(va_list);
 int print_char(va_list);
 int print_integer(va_list);
