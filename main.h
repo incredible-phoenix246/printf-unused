@@ -20,7 +20,7 @@ int *print(const char *format, ...);
 int print_string(va_list);
 int print_char(va_list);
 int print_integer(va_list);
-int print_binary(va_list);
+int main(va_list);
 int print_rot(va_list);
 int print_unsigned(va_list);
 int print_octal(va_list);
